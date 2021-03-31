@@ -75,6 +75,6 @@ class UserController extends Controller
         $user = User::findOrFail($id);
         $user->delete();
 
-        return response()->json(null, Response::HTTP_NO_CONTENT);
+        return response()->json(null,Response::HTTP_NO_CONTENT);
     }
 }
